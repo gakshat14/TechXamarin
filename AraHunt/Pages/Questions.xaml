@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AraHunt.Pages.Questions"
+             BackgroundColor="#DDDEDE"
+             >
+  <ScrollView Orientation="Vertical">
+    <Grid Padding="5,10,5,0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="1*"></RowDefinition>
+        <RowDefinition Height="3*"></RowDefinition>
+        <RowDefinition Height="1*"></RowDefinition>
+      </Grid.RowDefinitions>
+      <StackLayout>
+        <Label LineBreakMode="WordWrap" FontSize="24" x:Name="quesLabel"></Label>
+      </StackLayout>
+      <StackLayout Grid.Row="1">
+        <Button FontAttributes="Bold" 
+                BackgroundColor="#232122" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center" 
+                TextColor="#7BA4A8" 
+                Clicked="Answerbtn1Clicked" 
+                WidthRequest="200"
+                x:Name="Answerbtn1"></Button>
+        <Button FontAttributes="Bold" 
+                BackgroundColor="#232122" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center" 
+                TextColor="#7BA4A8" 
+                x:Name="Answerbtn2" 
+                WidthRequest="200"
+                Clicked="Answerbtn2Clicked"></Button>
+        <Button FontAttributes="Bold" 
+                BackgroundColor="#232122" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center" 
+                TextColor="#7BA4A8" 
+                x:Name="Answerbtn3" 
+                WidthRequest="200"
+                Clicked="Answerbtn3Clicked"></Button>
+        <Button FontAttributes="Bold" 
+                BackgroundColor="#232122" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center" 
+                TextColor="#7BA4A8" 
+                x:Name="Answerbtn4" 
+                WidthRequest="200"
+                Clicked="Answerbtn4Clicked"></Button>
+      </StackLayout>
+      <StackLayout Grid.Row="2">
+        <Label TextColor="#A5C05B" FontSize="18" x:Name="scoreLabel"></Label>
+      </StackLayout>
+    </Grid>
+  </ScrollView>
+  
+</ContentPage>

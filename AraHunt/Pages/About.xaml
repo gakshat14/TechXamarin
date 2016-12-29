@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AraHunt.Pages.About"
+             BackgroundColor="#1B4B5A">
+  <Grid Padding="5,0,5,0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="2*"></RowDefinition>
+      <RowDefinition Height="1*"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+      
+    </Grid.RowDefinitions>
+    <StackLayout VerticalOptions="End" 
+                 HorizontalOptions="Center"
+                 Padding="0,20,0,0">
+      <Image HorizontalOptions="Center" HeightRequest="150">
+        <Image.Source>
+          <OnPlatform x:TypeArguments="ImageSource"
+                      Android="logo.png"
+                      WinPhone="Assets/logo.png"></OnPlatform>
+        </Image.Source>
+      </Image>
+      <Label Text="Tech Quiz" 
+             FontSize="76"
+             TextColor="#F55449" 
+             FontAttributes="Bold"
+             HorizontalOptions="CenterAndExpand" 
+             HorizontalTextAlignment="Center"></Label>
+    </StackLayout>
+    <ScrollView Grid.Row="1" Orientation="Vertical" HorizontalOptions="Center" >
+      <StackLayout>
+        <Label LineBreakMode="WordWrap"
+               TextColor="#8E7970"
+               Text="Tech Talk is an initiative by the students of UIT-RGPV to spread awareness about technology among the student community. We believe it is us, the youth, who can take awareness about technology to the next level."
+               FontSize="18"></Label>
+      </StackLayout>
+    </ScrollView>
+    <StackLayout Grid.Row="2">
+    <Label TextColor="#0F1F38" VerticalOptions="End">
+      <Label.FormattedText>
+        <FormattedString>
+          <Span Text="Made with "></Span>
+          <Span ForegroundColor="Red" Text="&#x2764;"></Span>
+          <Span Text=" in India "></Span>
+          <Span Text="v2016.1.1"></Span>
+        </FormattedString>
+      </Label.FormattedText>
+    </Label>
+      <Label TextColor="#0F1F38" Text="Copyright © 2016. Tech Talk all rights reserved."></Label>
+    </StackLayout>
+  </Grid>
+</ContentPage>

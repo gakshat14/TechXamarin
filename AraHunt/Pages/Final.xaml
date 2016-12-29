@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AraHunt.Pages.Final">
+  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+    <Label Text="Thank You!!!" FontSize="18" HorizontalOptions="Center"></Label>
+    <Label x:Name="FinalMarks"  HorizontalOptions="Center" />
+    <Label VerticalOptions="End" LineBreakMode="WordWrap" Text="Show this score to the concerned volunteer"></Label>
+  </StackLayout>
+  
+</ContentPage>
