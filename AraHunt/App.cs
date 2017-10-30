@@ -16,7 +16,7 @@ namespace AraHunt
             {
                 //int quesIndex
                 BarBackgroundColor = Color.FromHex("#0F1F38")
-                
+                //setting the group
             };
 
         }
